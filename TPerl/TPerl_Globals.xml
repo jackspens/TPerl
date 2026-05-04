@@ -710,7 +710,6 @@
 				self.Deselect = function(self)
 					if (TPerlDB.highlightSelection) then
 						self.sel = nil
-						self.tex:Hide()
 						TPerl_Highlight:SetHighlight(self:GetParent())
 					end
 				end
