@@ -1958,7 +1958,7 @@ xpHigh.GROUP_ROSTER_UPDATE = xpHigh.GROUP_ROSTER_UPDATE
 -- PLAYER_TARGET_CHANGED
 function xpHigh:PLAYER_TARGET_CHANGED()
 	self:ClearAll("TARGET")
-	if UnitExists("target") and UnitPlayerOrPetInParty("target") or UnitPlayerOrPetInRaid("target") then
+	if UnitExists("target") and (UnitPlayerOrPetInParty("target") or UnitPlayerOrPetInRaid("target")) then
 		self:Add(UnitGUID("target"), "TARGET", 0)
 	end
 end
