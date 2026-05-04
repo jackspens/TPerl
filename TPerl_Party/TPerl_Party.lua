@@ -1662,6 +1662,7 @@ function TPerl_Party_Events:PLAYER_TARGET_CHANGED()
 		end
 	end
 	updatePartyThreat(true)
+    TPerl_SetHighlights()
 end
 
 -- PLAYER_ENTERING_WORLD
